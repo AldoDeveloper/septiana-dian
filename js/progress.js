@@ -6,8 +6,8 @@ export const progress = (() => {
     const info = document.getElementById('progress-info');
     const bar = document.getElementById('progress-bar');
 
-    const total = assets.length;
-    let loaded = 0;
+    const total = 3;
+    let loaded  = 0;
 
     const progress = () => {
         loaded += 1;
