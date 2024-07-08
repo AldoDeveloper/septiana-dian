@@ -13,3 +13,12 @@ window.audio = audio;
 window.comment = comment;
 window.progress = progress;
 window.pagination = pagination;
+
+const urlParams = new URLSearchParams(window.location.search);
+const spanType = document.getElementById("type-params");
+
+if(urlParams.get("type") === "b"){
+    spanType.innerText = "acara pernikahan anak kami";
+}else{
+    spanType.innerText = "acara pernikahan kami";
+}
